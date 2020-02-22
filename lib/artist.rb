@@ -12,6 +12,7 @@ attr_accessor :name, :songs, :title, :artist_name
   def self.songs
     @songs.select do |songs|
       songs.artist_name == self
+    end
   end
   
   def add_song(name)
