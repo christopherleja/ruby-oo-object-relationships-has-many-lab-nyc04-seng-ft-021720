@@ -14,7 +14,7 @@ attr_accessor :name, :songs, :title, :artist_name
   end
   
   def song_count
-    Song.all.select do |song| 
+    Song.all.count do |song| 
       song.artist_name == self
   end
   end
