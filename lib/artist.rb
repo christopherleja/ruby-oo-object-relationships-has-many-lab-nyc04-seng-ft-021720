@@ -21,10 +21,8 @@ attr_accessor :name
     end
   end
   
-  def add_song(name)
-    new_song = Song.new(self, name)
-    new_song.artist = self
-    #@@all << new_song
+  def add_song
+    song.artist = self
   end
   
   def self.song_count
