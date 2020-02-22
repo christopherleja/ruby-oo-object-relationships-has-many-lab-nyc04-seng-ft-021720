@@ -3,7 +3,7 @@ class Artist
 attr_accessor :song_name, :songs, :title, :artist_name
   
   def initialize(name)
-    @song_name = name
+    @name = name
     @artist_name = self
     @songs = []
     @songs << self
