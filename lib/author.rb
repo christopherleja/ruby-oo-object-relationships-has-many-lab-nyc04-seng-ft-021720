@@ -8,6 +8,9 @@ class Author
     @@names << self
   end
   
+  def self.posts
+    @@names
+  end
   
   
 end
