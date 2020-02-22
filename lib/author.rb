@@ -8,8 +8,13 @@ class Author
     @@names << self
   end
   
-  def self.posts
+  def self.all
     @@names
+  end
+  
+  def self.posts
+    @@names.all.select do |post| 
+      post.name 
   end
   
   
