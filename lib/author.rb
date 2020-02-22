@@ -1,6 +1,7 @@
 class Author
   
   attr_accessor :name
+  
   @@names = []
   
   def initialize(name)
