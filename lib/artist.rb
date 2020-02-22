@@ -1,17 +1,17 @@
 class Artist 
 
-attr_accessor :name, :songs, :title, :artist_name
+attr_accessor :song_name, :songs, :title, :artist_name
   
-  def initialize(name, artist_name)
-    @name = name
-    @artist_name = artist_name
+  def initialize(name)
+    @song_name = name
+    @artist_name = self.name
     @songs = []
     @songs << self
   end
   
   def self.songs
     @songs.map do |song| 
-      song.name == self.name
+      song.song == self.name
     end
   end
   
