@@ -1,3 +1,5 @@
+
+
 class Artist 
 
 attr_accessor :name, :songs, :title, :artist_name
