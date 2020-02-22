@@ -11,7 +11,7 @@ attr_accessor :name, :songs, :title, :artist_name
   
   def self.songs
     @songs.select do |songs|
-      songs.artist_name == self
+      songs.artist_name == self.name
     end
   end
   
