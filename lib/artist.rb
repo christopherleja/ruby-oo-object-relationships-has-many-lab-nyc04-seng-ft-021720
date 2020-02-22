@@ -6,8 +6,8 @@ attr_accessor :name
   
   def initialize(name)
     @name = name
-    @songs = []
-    @songs << self
+    # @songs = []
+    # @songs << self
   end
   
   def songs
