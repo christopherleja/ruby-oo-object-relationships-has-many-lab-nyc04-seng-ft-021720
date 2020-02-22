@@ -16,14 +16,14 @@ attr_accessor :name
   
   def songs
     Song.all.select do |song| 
-      name == self.name
+      song.artist == self
       
     end
   end
   
   def add_song(name)
     new_song = Song.new(self, name)
-    new_song.artist = self.name
+    new_song.artist = self
     #@@all << new_song
   end
   
