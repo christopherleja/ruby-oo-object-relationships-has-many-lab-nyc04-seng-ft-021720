@@ -13,7 +13,7 @@ attr_accessor :name, :songs, :title, :artist_name
     song.artist = @name
   end
   
-  def song_count
+  def self.song_count
     Song.all.count do |song| 
       song.artist_name == self
   end
