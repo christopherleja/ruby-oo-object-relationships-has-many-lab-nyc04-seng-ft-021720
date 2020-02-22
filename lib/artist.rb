@@ -26,9 +26,7 @@ attr_accessor :name
   end
   
   def self.song_count
-    Song.all.count do |song| 
-      song.artist_name == self
-  end
+    Song.all.count
   end
   
   def add_song_by_name(name)
