@@ -11,7 +11,7 @@ attr_accessor :song_name, :songs, :title, :artist_name
   
   def self.songs
     @songs.map do |song| 
-      song.song == self.name
+      song.name == self.name
     end
   end
   
