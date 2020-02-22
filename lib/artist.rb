@@ -10,6 +10,10 @@ attr_accessor :name
     @@names << self
   end
   
+  def self.all
+    @@names
+  end
+  
   def songs
     @@names.all.select do |song| 
       name == self.name
