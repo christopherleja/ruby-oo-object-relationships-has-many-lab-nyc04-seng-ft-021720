@@ -4,14 +4,14 @@ attr_accessor :name, :songs, :title, :artist_name
   
   def initialize(name)
     @name = name
-    @artist_name = self.name
+    @artist_name = self.artist_name
     @songs = []
     @songs << self
   end
   
   def self.songs
     @songs.select do |songs|
-      songs.artist_name == self.name
+      songs.artist_name == self.artist_name
     end
   end
   
