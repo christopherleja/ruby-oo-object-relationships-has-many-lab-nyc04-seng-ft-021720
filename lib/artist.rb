@@ -9,7 +9,7 @@ attr_accessor :name, :songs, :title, :artist_name
   end
   
   def self.songs
-    @songs.map do |song| 
+    Songs.all.select do |song| 
       song.name == self.name
     end
   end
